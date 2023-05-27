@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 1 PRACTICE</title>
+    
+</head>
+<style>
+    /* for making changes in class we put (.) and class name */
+    .red{      
+       color:white;
+       background-color: black;
+       border: 4px red;
+      
+    }
+    /* for making changes in id we put (#) and id name */
+    #first{
+         color: rgb(247, 249, 247);
+         background-color: orange;
+         border: 4px solid rgb(112, 150, 216);
+
+         }
+    h1{
+        color:yellow;
+        background-color: hsl(271, 100%, 25%);
+        
+    }
+    /* we can group selectors for making changes in them by separting with (,) */
+    h2,h3{
+        color: blue;
+        background-color: bisque;
+        border: 2px solid yellow;
+
+    }
+    /* for making changes in all the element we use (*) */
+    *{    
+        /* Padding represents the amount of inner space an element has, while the margin is whitespace available surrounding an element. */
+         /* margin space between boundry and inner element */
+        margin: 5px;
+        /* padding space between border and content */
+        padding: 6px ;
+    }
+    .green{
+        border: 4px solid violet;
+        margin: 5px;
+        padding: 6px;
+        height: 8cm;
+    }
+    ::-moz-selection{
+        color:chartreuse;
+    }
+    .orange{
+        color: rgb(58, 133, 225);
+        height: 10px;
+        width: 5cm;
+        border:3px  solid green ;
+        padding: 4px;
+        border:3px  solid rgb(128, 90, 0) ;
+        height: 5cm
+    }
+    /* selecting direct child paragraph of a div(ig div is nasted then it will not work) */
+    .blue{
+        color:rgb(14, 1, 1);
+        /* add image in back ground */
+        background-image: url("fog.png");
+        border: 6px solid purple;
+        /* below tag used to stop repeatation of image in background in x, y and diagonal direction*/
+
+        /*( ((background-repeat: no-repeat, no-repeat, no-repeat;))) */
+        
+        /* below tag used to set position of bg image */
+
+        /* (((background-position: bottom right, left, right;))) */
+        height: 8cm;
+    }
+    /*for applying gradiant in background*/
+   
+    /* put multiple images and gradiant in the background */
+    .multi-bg-example {
+             font-size: 100px;
+             color: yellow;
+             text-shadow: 2px;
+  width: 100%;
+  height: 400px;
+  background-image: url(fog.png), url(leaf.png),url(bulb.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+}
+
+.gradiant{ 
+    
+        color: rgb(243, 241, 241);
+        text-size-adjust: 26xp;
+        height: 500px;
+        width: 300px;
+        background-color: rgba(67, 79, 216, 0.244);
+
+        border: 10px solid greenyellow;
+        background-image: url(images.jfif);
+        /* background-repeat: no-repeat, no-repeat, no-repeat; */
+        background-position: center;
+        background-attachment: contain;
+
+    }
+
+    .multibg{
+       
+        height: 300px;
+        width: 300px;
+        /* we make multiple command on this tag */
+        background: rgba(60, 148, 166, 0.48) url(bulb.png) center ;
+        display: inline-block;
+    }
+
+
+   </style>
+
+
+<body>
+    <div class="red">
+        <h1>THIS IS FOR TO CHECK CLASS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti fuga rerum odit similique id dignissimos quasi omnis delectus, sequi perspiciatis nam laudantium iure aperiam minus tenetur autem nemo quas?</p>
+        <br>
+        <h2>THIS IS PARA 2</h2>
+         <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eos accusamus numquam quaerat minima dolorum odit suscipit dolor id, placeat, magni ullam soluta! Praesentium, quisquam quidem ea perspiciatis tempora ducimus libero aut! Dolore blanditiis modi tempore maxime mollitia molestias magni voluptas sunt nihil debitis nemo inventore maiores illum est, distinctio, veritatis aspernatur reprehenderit illo? Ad repellendus modi fuga ipsam, nostrum explicabo magni voluptate velit. Eos, est deserunt suscipit maiores doloremque a accusamus omnis ducimus qui eveniet corrupti minima id debitis nostrum nihil quis cum, voluptatum optio molestiae! Cumque non impedit deserunt alias suscipit vero, iure facere repudiandae rem </P>
+        </div>
+        <div id="first">
+            <h3>THIS IS TO CHECK ID</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad natus consequuntur optio modi repellendus ut fugiat totam, debitis similique officiis voluptatum quia facere unde. Magni similique eius enim labore.</P>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga cumque laborum, sunt nam voluptatem quisquam nemo eius fugiat enim minima soluta nulla dolorem consectetur ex quam recusandae accusantium atque.</P>
+        </div>
+        <div class="green">
+           <h4>THIS FOR CHECKING CHANGES MAKE IN GROUP</h4>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quis labore amet, qui repellendus debitis provident illo eum tempora voluptates nobis fugiat quia voluptatem alias, vel neque itaque exercitationem ex!
+        </p>   
+        <p class="orange">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloribus laborum unde, excepturi dolore alias explicabo, nemo autem, deserunt ipsa voluptatibus! Quam quibusdam rerum voluptatem quos illum voluptatum veritatis inventore.</p>
+        </div>
+
+        <div class="multi-bg-example">
+            <p>IMAGES IN THE </p>
+            <p>BACKGROUND</p>
+        </div>
+
+
+
+        <div class="blue">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente omnis id aperiam iste maiores ipsam ea repellendus perferendis nostrum quas quasi sed odit molestias totam voluptatibus possimus, consequatur harum, quod corrupti non quibusdam odio sequi officiis? Ipsam explicabo quisquam perspiciatis ex, ratione labore temporibus adipisci voluptatum pariatur nemo ipsum eveniet dolore nulla rem accusamus, blanditiis repellendus in possimus velit quam? Error maxime officiis voluptas eos dolore delectus corrupti voluptates eum ducimus ipsam nihil sunt dignissimos quia adipisci, ipsum, iusto consequatur cum praesentium odit qui aperiam in cupiditate animi cumque? Quod tempore reiciendis assumenda consequuntur, labore praesentium rerum? Commodi natus culpa ea numquam ut consectetur debitis modi quibusdam voluptas hic expedita dignissimos obcaecati ducimus minima repellendus, quas facilis provident doloremque nemo ad rem soluta pariatur. Ipsam minus praesentium quas! Necessitatibus laudantium autem error atque aut iure illo blanditiis, exercitationem cupiditate modi sunt magnam .</p>
+        </div>
+
+        <!-- gradiant -->
+
+        <div class="gradiant">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nihil placeat dolorum veritatis temporibus, in amet ipsam. Hic facilis esse atque voluptatem distinctio delectus nesciunt. Dolore a placeat aliquam eveniet repudiandae sint obcaecati asperiores earum vel. Praesentium nulla fugiat nam est a quas repellendus veniam laboriosam! Rem consequatur tempora itaque neque, accusamus officia a consectetur vitae vel animi omnis ratione voluptates commodi recusandae, modi necessitatibus, eaque similique delectus quaerat maxime aliquid totam. Molestiae at quisquam voluptatum mollitia, accusamus fugit distinctio ratione consectetur ducimus, laudantium fuga esse sit voluptates eos tempora error unde laborum. Porro voluptates assumenda ut quisquam delectus aspernatur perspiciatis ratione illo labore velit corrupti tempore explicabo, hic maiores, excepturi consequuntur recusandae, veniam nobis? Dolores excepturi, aliquid, quod dicta facere, maiores in repellat nesciunt eligendi cupiditate </p>
+        </div>
+
+        <div class="multibg"></div>
+
+
+       
+</body>
+</html>
